@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Temperature and Humidity Display -->
+    <TextView
+        android:id="@+id/tempHumidityStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature and Humidity: Loading..."
+        android:textSize="18sp" />
+
+    <!-- Smoke Sensor Display -->
+    <TextView
+        android:id="@+id/smokeStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smoke Status: Clear"
+        android:textSize="18sp" />
+
+    <!-- Ultrasonic Sensor Display -->
+    <TextView
+        android:id="@+id/motionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motion Status: No Movement"
+        android:textSize="18sp" />
+
+    <!-- Fan Control Button -->
+    <Button
+        android:id="@+id/fanControlButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control Fan"
+        android:layout_marginTop="16dp" />
+
+    <!-- Smoke Alarm Button -->
+    <Button
+        android:id="@+id/alarmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activate Alarm"
+        android:layout_marginTop="16dp" />
+
+    <!-- Keypad Input (for simulation) -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Keypad buttons -->
+        <Button
+            android:id="@+id/keypadButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+        <Button
+            android:id="@+id/keypadButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+        <Button
+            android:id="@+id/keypadButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+        <!-- Add more keypad buttons as needed -->
+
+    </GridLayout>
+</LinearLayout>
